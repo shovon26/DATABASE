@@ -1,0 +1,25 @@
+use shc;
+ create table movies (
+    mid int(10) unsigned not null auto_increment,
+     mtitle varchar(255) not null default ' ',
+     myear year(4) not null default '0000',
+   primary key(mid)
+   ) ENGINE =InnoDB;
+
+
+
+create table persons (
+pid int(10) unsigned not null auto_increment,
+pname varchar(255) not null default '',
+psex enum('M','F') not null default 'M',
+pdob date not null,
+primary key(pid)
+) ENGINE =InnoDB;
+
+
+create table roles (
+mid int(10) not null default '0' references movies(mid),
+pid int(10) not null default '0' references persons(pid),
+role enum('A','D') not null default 'A',
+primary key (mid,pid,role)
+) ENGINE =InnoDB;
