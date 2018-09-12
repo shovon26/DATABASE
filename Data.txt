@@ -1,0 +1,12 @@
+
+insert into movies values(1,'Rear Window',1954);
+insert into movies values(2,'Avatar',2011);
+insert into movies values(3,'Rear Windowfg',1954);
+
+
+insert into persons values(NULL,'Cary Grant','M','1904-01-18');
+insert into persons values(NULL,'Grace Kelly','F','1929-11-12');
+insert into persons values(NULL,'Humphray Bogart','M','1899-12-25');
+insert into persons values(NULL,'Sydney Greenstreat','M','1992-11-10');
+insert into persons values(NULL,'Neymar JR','M','1992-01-05');
+
